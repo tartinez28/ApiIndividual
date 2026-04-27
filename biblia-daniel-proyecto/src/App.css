@@ -98,3 +98,67 @@ nav a {
   color: #d4af37;
   opacity: 0.8;
 }
+.titulo-pagina {
+  text-align: center;
+  color: #b8860b; /* Dorado base */
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem; /* Más grande y presencial */
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* Sutil sombra para dar relieve */
+  text-shadow: 2px 2px 4px rgba(184, 134, 11, 0.2);
+  position: relative;
+  display: block;
+}
+
+.titulo-pagina::after {
+  content: "✨"; /* O puedes usar un adorno como "━" */
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #d4af37;
+  opacity: 0.8;
+}
+/* Estilo de rejilla para la página Original */
+.original-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Efecto de borde doble para secciones especiales */
+.border-double {
+  border: 4px double #b8860b !important;
+}
+/* --- Arreglo para el botón de guardar --- */
+
+/* 1. Estado Base (Sin guardar, sin hover) */
+.btn-gold {
+  /* ... tus estilos actuales ... */
+  background-color: transparent !important; /* Fondo transparente por defecto */
+  color: #b8860b !important; /* Texto dorado por defecto */
+  transition: all 0.3s ease !important; /* Transición suave */
+}
+
+/* 2. Estado Hover (Pasar el cursor por encima) */
+/* Forzamos que el texto sea blanco cuando el fondo se vuelve dorado */
+.btn-gold:hover {
+  background-color: #b8860b !important; /* Fondo dorado en hover */
+  color: #ffffff !important; /* ¡LETRA BLANCA FORZADA EN HOVER! */
+  box-shadow: 0 4px 10px rgba(184, 134, 11, 0.3) !important;
+}
+
+/* 3. Estado "Guardado" (Manejado por JS con estilo en línea) */
+/* El JS ya pone el fondo dorado y el texto blanco. 
+   Pero si quieres asegurarte, puedes usar una clase CSS también. 
+   Por ahora, el estilo en línea del JS debería funcionar si el CSS base está bien. */
+
+/* Opcional: Arreglo para cuando se hace click (active) */
+.btn-gold:active {
+  transform: translateY(1px) !important;
+  box-shadow: 0 2px 5px rgba(184, 134, 11, 0.2) !important;
+}
