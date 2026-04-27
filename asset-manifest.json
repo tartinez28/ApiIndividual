@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ApiIndividual/static/css/main.037554cf.css",
+    "main.js": "/ApiIndividual/static/js/main.76315a43.js",
+    "static/js/453.4521c3ec.chunk.js": "/ApiIndividual/static/js/453.4521c3ec.chunk.js",
+    "index.html": "/ApiIndividual/index.html",
+    "main.037554cf.css.map": "/ApiIndividual/static/css/main.037554cf.css.map",
+    "main.76315a43.js.map": "/ApiIndividual/static/js/main.76315a43.js.map",
+    "453.4521c3ec.chunk.js.map": "/ApiIndividual/static/js/453.4521c3ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.037554cf.css",
+    "static/js/main.76315a43.js"
+  ]
+}
